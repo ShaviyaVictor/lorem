@@ -64,3 +64,28 @@ def lineCounter(textFile) :
     data = handle.readlines()
 
     return data
+
+
+
+
+
+
+# def wordLength(textFile) :
+#   '''
+#   testing whether we can actually see the longest word with my function
+#   '''
+
+#   with open(textFile, 'r') as handle :
+#     data = handle.read()
+
+#     single = data.split()
+
+#     length = len(single)
+
+#     print(single, length)
+
+# wordLength(textFile)
+
+
+
+

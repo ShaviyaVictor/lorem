@@ -64,6 +64,15 @@ class testTeadFiles(unittest.TestCase) :
 
 
 
+  def testWordLength(self) :
+    '''
+    5th TestCase to confirm whether we can actually see the longest word in the text file
+    '''
+
+
+
+
+
 
 if __name__ == '__main__' :
   unittest.main()
