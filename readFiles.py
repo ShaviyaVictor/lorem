@@ -1,4 +1,6 @@
-with open('test.txt', 'r') as handle:
-  data = handle.read()
+# with open('test.txt', 'r') as handle:
+#   data = handle.read()
 
-  print(data)
+#   print(data)
+
+

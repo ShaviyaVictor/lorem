@@ -10,7 +10,15 @@ class testTeadFiles(unittest.TestCase) :
   """
 
 
-  
+  def testGetData(self) :
+    """
+    1st Test case to confirm that we are getting data from the file 
+    """
+
+    with open('test.txt', 'r') as handle :
+      data = handle.read()
+
+      self.assertEqual(data, readFiles.readFile('test.txt'))
 
 
 
