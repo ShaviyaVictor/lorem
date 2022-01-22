@@ -52,3 +52,15 @@ def counter(textFile) :
         count += 1
 
     return count
+
+
+
+def lineCounter(textFile) :
+  '''
+  Function that will read the lines present in our text file
+  '''
+
+  with open(textFile, 'r') as handle :
+    data = handle.readlines()
+
+    return data
