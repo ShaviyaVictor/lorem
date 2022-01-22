@@ -34,5 +34,23 @@ class testTeadFiles(unittest.TestCase) :
 
 
 
+  def testCounter(self) :
+    '''
+    3rd TestCase to confrim that we can count how many times a single word is being used
+    '''
+
+    with open('test.txt', 'r') as handle :
+      data = handle.read()
+
+      count = 0
+
+      for word in data.split() :
+        if word == 'lorem' :
+          count += 1
+
+      self.assertEqual(data, readFiles.counter(count))
+
+
+
 if __name__ == '__main__' :
   unittest.main()

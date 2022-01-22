@@ -34,3 +34,6 @@ def readFile(textFile) :
 
   except FileNotFoundError :
     return None
+
+
+    
