@@ -52,5 +52,18 @@ class testTeadFiles(unittest.TestCase) :
 
 
 
+  def testLineCounter(self) :
+    '''
+    4th TestCase to confirm that whether we can see how many lines we have in our text file
+    '''
+
+    with open('test.txt', 'r') as handle :
+      data = handle.readlines()
+
+      self.assertEqual(data, readFiles.lineCounter('test.txt'))
+
+
+
+
 if __name__ == '__main__' :
   unittest.main()
