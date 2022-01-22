@@ -22,6 +22,17 @@ class testTeadFiles(unittest.TestCase) :
 
 
 
+  def testNonFile(self) :
+    '''
+    2nd TestCase to confirm that an exeption is raised when a wrong file is inputted
+
+    And we therefore input a wrong file name at the assertEqual function expecting to get a None response
+    '''
+
+    self.assertEqual(None, readFiles.readFile('testing.txt'))
+
+
+
 
 if __name__ == '__main__' :
   unittest.main()
