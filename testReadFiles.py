@@ -48,7 +48,7 @@ class testTeadFiles(unittest.TestCase) :
         if word == 'lorem' :
           count += 1
 
-      self.assertEqual(data, readFiles.counter(count))
+      self.assertEqual(count, readFiles.counter('test.txt'))
 
 
 

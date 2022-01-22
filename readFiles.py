@@ -36,4 +36,19 @@ def readFile(textFile) :
     return None
 
 
-    
+
+def counter(textFile) :
+  '''
+  Function that makes a count of how many times a single word has been used in our file
+  '''
+
+  with open(textFile, 'r') as handle :
+    data = handle.read()
+
+    count = 0
+
+    for word in data.split() :
+      if word == 'lorem' :
+        count += 1
+
+    return count
